@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <rect width="32" height="32" rx="8" fill="#0d0f12"/>
   <text x="3" y="23" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="16" fill="#e8ecf0">VJ</text>
-  <circle cx="28" cy="22" r="3" fill="#3b82f6"/>
+  <circle cx="24" cy="24" r="3" fill="#3b82f6"/>
 </svg>
