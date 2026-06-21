@@ -82,7 +82,7 @@ sections.forEach(s => sectionObserver.observe(s));
 //  2. Creá un nuevo formulario ("New Form")
 //  3. Reemplazá "YOUR_FORM_ID" con el código que te dan (ej: xyzabcde)
 //
-const FORMSPREE_ID = 'YOUR_FORM_ID'; // <-- reemplazá esto
+const FORMSPREE_ID = 'mgojwdln'; // <-- reemplazá esto
 
 const form        = document.getElementById('contactForm');
 const submitBtn   = form.querySelector('button[type="submit"]');
