@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-valentin-jz",
+  "version": "1.0.0",
+  "description": "Valentín Juarez IT Portfolio",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "it-support"
+  ],
+  "author": "Valentín Juarez",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
