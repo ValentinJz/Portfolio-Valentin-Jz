@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Valentín Juarez – Analista de Soporte IT Junior | Help Desk | Infraestructura | Córdoba, Argentina" />
+  <title>Valentín Juarez · IT Support</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">VJ<span class="nav__logo-dot">.</span></a>
+      <ul class="nav__links">
+        <li><a href="#about"      data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#skills"     data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a href="#projects"   data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#contact"    data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="nav__controls">
+        <button class="nav__lang" id="langToggle" aria-label="Switch language">ES</button>
+        <button class="nav__theme" id="themeToggle" aria-label="Cambiar tema">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="nav__burger" id="burger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#about"      class="nav__mobile-link" data-i18n="nav.about">Sobre mí</a>
+      <a href="#skills"     class="nav__mobile-link" data-i18n="nav.skills">Habilidades</a>
+      <a href="#experience" class="nav__mobile-link" data-i18n="nav.experience">Experiencia</a>
+      <a href="#projects"   class="nav__mobile-link" data-i18n="nav.projects">Proyectos</a>
+      <a href="#contact"    class="nav__mobile-link" data-i18n="nav.contact">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__inner container">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        <span data-i18n="hero.badge">Disponible para oportunidades</span>
+      </div>
+      <p class="hero__eyebrow mono" data-i18n="hero.eyebrow">Hola, soy</p>
+      <h1 class="hero__name">Valentín<br/><span class="hero__name-accent">Juarez</span></h1>
+      <p class="hero__title mono" data-i18n="hero.title">Soporte IT Junior · Córdoba, Argentina</p>
+      <p class="hero__desc" data-i18n="hero.desc">
+        Analista de Soporte IT Junior N1-N2 con experiencia real en gestión de incidencias, 
+        monitoreo de infraestructura y administración de entornos corporativos. 
+        Orientado al aprendizaje continuo y al crecimiento dentro del área IT.
+      </p>
+      <div class="hero__cta">
+        <a href="CV_Valentin_Juarez.pdf" download class="btn btn--primary" id="cvDownload">
+          <i class="fa-solid fa-download"></i> <span data-i18n="hero.cv">Descargar CV</span>
+        </a>
+        <a href="https://linkedin.com/in/valentin-juarez-/" target="_blank" rel="noopener" class="btn btn--ghost">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="#contact" class="btn btn--ghost">
+          <i class="fa-solid fa-envelope"></i> <span data-i18n="hero.contact">Contacto</span>
+        </a>
+      </div>
+      <div class="hero__social">
+        <a href="https://github.com/ValentinJz" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/valentin-juarez-/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:juarezvalentin627@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="mono">scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SOBRE MÍ
+  ══════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">01 · about</span>
+        <h2 class="section__title" data-i18n="about.title">Sobre mí</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p data-i18n="about.p1">
+            Tengo 19 años y vivo en Córdoba, Argentina. Desde temprana edad me llamó la atención entender 
+            cómo funciona la tecnología por dentro: armar PCs, diagnosticar fallas, 
+            explorar sistemas, optimización en recursos ajustados. Esa curiosidad me llevó a formarme en soporte IT y a dar 
+            mis primeros pasos en el mundo laboral.
+          </p>
+          <p data-i18n="about.p2">
+            Completé una práctica profesional en <strong>Ankaloo Construcciones</strong>, donde 
+            trabajé de forma real con tickets de soporte, gestión de incidencias, monitoreo de infraestructura, 
+            Active Directory, scripting y documentación técnica. No fue teoría: fue resolver 
+            problemas reales para usuarios reales, todos los días.
+          </p>
+          <p data-i18n="about.p3">
+            Me interesa seguir creciendo en áreas de soporte técnico y, a largo plazo, 
+            infraestructura y redes. Me gusta documentar lo que aprendo, porque creo que 
+            escribir sobre algo es la mejor manera de entenderlo.
+          </p>
+          <div class="about__facts">
+            <div class="about__fact">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Córdoba, Argentina</span>
+            </div>
+            <div class="about__fact">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span data-i18n="about.education">Bachiller en Economía y Administración · ISADA</span>
+            </div>
+            <div class="about__fact">
+              <i class="fa-solid fa-language"></i>
+              <span data-i18n="about.languages">Español (nativo) · Inglés (intermedio) · Portugués (básico)</span>
+            </div>
+            <div class="about__fact">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about.availability">Disponible para trabajo presencial | remoto | híbrido</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__cards">
+          <div class="about__stat-card">
+            <span class="about__stat-num">1</span>
+            <span class="about__stat-label" data-i18n="about.stat1">Experiencia Corporativa</span>
+          </div>
+          <div class="about__stat-card">
+            <span class="about__stat-num">2</span>
+            <span class="about__stat-label" data-i18n="about.stat2">Referencias Profesionales</span>
+          </div>
+          <div class="about__stat-card">
+            <span class="about__stat-num">+20</span>
+            <span class="about__stat-label" data-i18n="about.stat3">Herramientas y tecnologías trabajadas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       HABILIDADES
+  ══════════════════════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">02 · skills</span>
+        <h2 class="section__title" data-i18n="skills.title">Habilidades</h2>
+      </div>
+      <div class="skills__groups">
+
+        <div class="skills__group">
+          <h3 class="skills__group-title"><i class="fa-solid fa-headset"></i> <span data-i18n="skills.group1">Soporte &amp; Help Desk</span></h3>
+          <div class="skills__tags">
+            <span class="tag" data-i18n="skill.tickets">Gestión de Tickets</span>
+            <span class="tag">Zammad Helpdesk</span>
+            <span class="tag" data-i18n="skill.remote">Soporte Remoto</span>
+            <span class="tag">AnyDesk</span>
+            <span class="tag">Troubleshooting</span>
+            <span class="tag" data-i18n="skill.users">Atención a Usuarios</span>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title"><i class="fa-solid fa-server"></i> <span data-i18n="skills.group2">Infraestructura &amp; Sistemas</span></h3>
+          <div class="skills__tags">
+            <span class="tag">Active Directory</span>
+            <span class="tag" data-i18n="skill.useradmin">Administración de Usuarios</span>
+            <span class="tag">Monitoreo Zabbix</span>
+            <span class="tag">DNS / DHCP</span>
+            <span class="tag">VPN (OpenVPN)</span>
+            <span class="tag" data-i18n="skill.virt">Virtualización Básica</span>
+            <span class="tag">VMware / VirtualBox</span>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title"><i class="fa-solid fa-network-wired"></i> <span data-i18n="skills.group3">Redes</span></h3>
+          <div class="skills__tags">
+            <span class="tag">TCP/IP</span>
+            <span class="tag">LAN / WAN</span>
+            <span class="tag">Switches &amp; APs</span>
+            <span class="tag" data-i18n="skill.firewall">Firewall básico</span>
+            <span class="tag">Cloudflare / Hostinger</span>
+            <span class="tag" data-i18n="skill.logs">Análisis de Logs</span>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title"><i class="fa-solid fa-microchip"></i> <span data-i18n="skills.group4">Hardware &amp; OS</span></h3>
+          <div class="skills__tags">
+            <span class="tag">Windows 10 / 11</span>
+            <span class="tag" data-i18n="skill.linux">Linux básico</span>
+            <span class="tag" data-i18n="skill.pcbuild">Armado y reparación de PCs</span>
+            <span class="tag" data-i18n="skill.diag">Diagnóstico de fallas</span>
+            <span class="tag" data-i18n="skill.format">Formateo e instalación de SO</span>
+            <span class="tag" data-i18n="skill.backup">Backup y recuperación</span>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title"><i class="fa-solid fa-code"></i> <span data-i18n="skills.group5">Software &amp; Scripting</span></h3>
+          <div class="skills__tags">
+            <span class="tag">PowerShell</span>
+            <span class="tag" data-i18n="skill.python">Python básico</span>
+            <span class="tag">Microsoft 365</span>
+            <span class="tag">Office Suite</span>
+            <span class="tag" data-i18n="skill.sql">SQL básico</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag" data-i18n="skill.docs">Documentación Técnica</span>
+            <span class="tag">Batch (CMD)</span>
+            <span class="tag" data-i18n="skill.js">Javascript básico</span>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="skills.group6">Seguridad &amp; Otros</span></h3>
+          <div class="skills__tags">
+            <span class="tag" data-i18n="skill.sec">Ciberseguridad básica</span>
+            <span class="tag" data-i18n="skill.vuln">Análisis de vulnerabilidades</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EXPERIENCIA
+  ══════════════════════════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">03 · experience</span>
+        <h2 class="section__title" data-i18n="exp.title">Experiencia · Recorrido en IT</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role" data-i18n="exp.job1.role">Analista de Soporte IT e Infraestructura</h3>
+                <p class="timeline__company">
+                  <i class="fa-solid fa-building"></i> Ankaloo Construcciones SRL · Córdoba
+                </p>
+              </div>
+              <span class="timeline__date mono" data-i18n="exp.job1.date">Dic 2025 – May 2026</span>
+            </div>
+            <ul class="timeline__list">
+              <li data-i18n="exp.job1.li1">Gestión y seguimiento de tickets e incidencias con <strong>Zammad Helpdesk</strong>.</li>
+              <li data-i18n="exp.job1.li2">Monitoreo de infraestructura con <strong>Zabbix</strong>: servidores, switches, firewall, APs e impresoras.</li>
+              <li data-i18n="exp.job1.li3">Administración de usuarios, grupos y accesos en <strong>Active Directory</strong>.</li>
+              <li data-i18n="exp.job1.li4">Soporte técnico presencial y remoto via <strong>AnyDesk</strong>; diagnóstico de hardware y software.</li>
+              <li data-i18n="exp.job1.li5">Preparación, formateo e instalación de sistemas operativos y software corporativo.</li>
+              <li data-i18n="exp.job1.li6">Desarrollo de scripts en <strong>PowerShell y Python</strong> para automatizar procesos internos.</li>
+              <li data-i18n="exp.job1.li7">Creación de documentación técnica, tutoriales y base de conocimiento interna.</li>
+              <li data-i18n="exp.job1.li8">Análisis de logs, identificación de vulnerabilidades y elaboración de reportes técnicos.</li>
+              <li data-i18n="exp.job1.li9">Administración básica de DNS y servicios web (Hostinger, Cloudflare).</li>
+              <li data-i18n="exp.job1.li10">Creación de firmas corporativas en HTML para toda la organización.</li>
+            </ul>
+            <div class="timeline__tech">
+              <span class="tag tag--small">Zammad Helpdesk</span>
+              <span class="tag tag--small">Zabbix</span>
+              <span class="tag tag--small">Active Directory</span>
+              <span class="tag tag--small">PowerShell</span>
+              <span class="tag tag--small">AnyDesk</span>
+              <span class="tag tag--small">OpenVPN</span>
+              <span class="tag tag--small">Cloudflare</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker timeline__marker--secondary"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role" data-i18n="exp.job2.role">Soporte Técnico Freelance</h3>
+                <p class="timeline__company">
+                  <i class="fa-solid fa-user"></i> <span data-i18n="exp.job2.company">Particular · Córdoba</span>
+                </p>
+              </div>
+              <span class="timeline__date mono" data-i18n="exp.job2.date">2023 – Actualidad</span>
+            </div>
+            <ul class="timeline__list">
+              <li data-i18n="exp.job2.li1">Soporte técnico presencial y remoto a usuarios particulares.</li>
+              <li data-i18n="exp.job2.li2">Armado, mantenimiento y reparación de computadoras de escritorio y notebooks.</li>
+              <li data-i18n="exp.job2.li3">Diagnóstico y resolución de fallas de hardware y software.</li>
+              <li data-i18n="exp.job2.li4">Instalación, configuración y optimización de Windows.</li>
+              <li data-i18n="exp.job2.li5">Reemplazo e instalación de componentes: SSD/NVMe/HDD, RAM, CPU, GPU, PSU, Motherboard.</li>
+              <li data-i18n="exp.job2.li6">Limpieza preventiva y mantenimiento de equipos.</li>
+              <li data-i18n="exp.job2.li7">Asesoramiento en compra, actualización y venta de equipos informáticos.</li>
+            </ul>
+            <div class="timeline__tech">
+              <span class="tag tag--small">Hardware</span>
+              <span class="tag tag--small">Windows</span>
+              <span class="tag tag--small" data-i18n="skill.diag">Diagnóstico</span>
+              <span class="tag tag--small" data-i18n="skill.remote">Soporte Remoto</span>
+              <span class="tag tag--small" data-i18n="skill.custserv">Atención al Cliente</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Recomendaciones -->
+      <div class="recs">
+        <h3 class="recs__title"><i class="fa-solid fa-quote-left"></i> <span data-i18n="recs.title">Recomendaciones</span></h3>
+        <div class="recs__grid">
+          <div class="recs__card reveal">
+            <p class="recs__text">
+              "Tuve el placer de trabajar y compartir los desafíos del área de Sistemas y Control de Gestión con Valentin Juarez durante su Práctica Profesional realizada en AnkaLoo. En esta etapa Valentín se desempeñó como Analista de Soporte IT, realizando su trabajo con gran eficiencia, compromiso, proactividad y responsabilidad pero sobre todas las cosas con gran empatía y calidad humana. Valentín con tan solo 18 años trabajó como un profesional de varios años recorridos en el rubro y siempre estuvo bien predispuesto a las actividades que se le encomendaron. Sin dudas un joven profesional altamente recomendable y con una gran proyección en el mundo de IT."
+            </p>
+            <div class="recs__author">
+              <div class="recs__author-info">
+                <span class="recs__author-name">Eugenio Hawryto</span>
+                <span class="recs__author-role">Sistemas y Control de Gestión · Ankaloo</span>
+                <span class="recs__author-company">Ankaloo Construcciones</span>
+              </div>
+            </div>
+          </div>
+          <div class="recs__card reveal">
+            <p class="recs__text">
+              "Tuve la oportunidad de trabajar con Valentín Juarez y quiero, no solo recomendarlo, sino también felicitarlo por su excelente desempeño durante su pasantía en Infraestructura IT en Ankaloo Construcciones. Se destacó por su responsabilidad, predisposición para aprender y capacidad para enfrentar nuevos desafíos con entusiasmo. A lo largo de este período en la empresa demostró compromiso, iniciativa y una rápida adaptación a las herramientas y procesos del área. Además, mantuvo siempre una actitud colaborativa y profesional con todo el equipo. Estoy convencido de que tiene un gran futuro en el ámbito de la tecnología y le deseo muchos éxitos en los próximos desafíos de su carrera profesional. Considero además que posee una excelente base técnica y un gran potencial de crecimiento profesional lo que va a permitirle adaptarse a cualquier ámbito de trabajo y ser de gran importancia en donde se desempeñe."
+            </p>
+            <div class="recs__author">
+              <div class="recs__author-info">
+                <span class="recs__author-name">Rodrigo Ivan Ferrer</span>
+                <span class="recs__author-role">Supervisor directo · Infraestructura IT</span>
+                <span class="recs__author-company">Ankaloo Construcciones</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROYECTOS
+  ══════════════════════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">04 · projects</span>
+        <h2 class="section__title" data-i18n="proj.title">Proyectos</h2>
+        <p class="section__subtitle" data-i18n="proj.subtitle">Cosas que hice o en las que participé, aplicando lo aprendido.</p>
+      </div>
+      <div class="projects__grid">
+
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <i class="fa-solid fa-terminal project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/ValentinJz" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-card__title" data-i18n="proj.p1.title">Scripts PowerShell</h3>
+          <p class="project-card__desc" data-i18n="proj.p1.desc">
+            Scripts desarrollados durante mi experiencia en Ankaloo para automatizar tareas: Optimizadores, limpiadores residuales, creación de usuarios, reportes de equipos y gestión de servicios. Aplicación real en producción.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--small">PowerShell</span>
+            <span class="tag tag--small" data-i18n="proj.tag.auto">Automatización</span>
+            <span class="tag tag--small">Windows</span>
+            <span class="tag tag--small">Batch (CMD)</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__top">
+            <i class="fa-solid fa-book project-card__icon"></i>
+            <div class="project-card__links">
+              <a href="https://github.com/ValentinJz" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-card__title" data-i18n="proj.p2.title">Documentación Técnica Interna</h3>
+          <p class="project-card__desc" data-i18n="proj.p2.desc">
+            Participé en la creación de documentación técnica, tutoriales y base de conocimiento 
+            interna en Ankaloo: guías de resolución de incidencias y procedimientos para el equipo.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--small" data-i18n="skill.docs">Documentación</span>
+            <span class="tag tag--small">Knowledge Base</span>
+            <span class="tag tag--small">IT Support</span>
+            <span class="tag tag--small">Zammad</span>
+          </div>
+        </div>
+
+        <div class="project-card project-card--add reveal">
+          <div class="project-card__add-inner">
+            <i class="fa-brands fa-github"></i>
+            <span data-i18n="proj.more">Más proyectos en GitHub</span>
+            <a href="https://github.com/ValentinJz" target="_blank" rel="noopener" class="btn btn--ghost btn--small">
+              <span data-i18n="proj.viewprofile">Ver perfil</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CERTIFICACIONES
+  ══════════════════════════════════════ -->
+  <section class="section certs" id="certs">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">05 · certifications</span>
+        <h2 class="section__title" data-i18n="certs.title">Certificaciones</h2>
+      </div>
+      <div class="certs__grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-card__icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-card__info">
+            <h3 class="cert-card__name" data-i18n="certs.c1">Introducción a la Programación, Domótica y Robótica</h3>
+            <span class="cert-card__status cert-card__status--done" data-i18n="certs.done">Completado</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-card__icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-card__info">
+            <h3 class="cert-card__name" data-i18n="certs.c2">Reparación y ensamblado de equipos informáticos</h3>
+            <span class="cert-card__status cert-card__status--done" data-i18n="certs.done">Completado</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label mono">06 · contact</span>
+        <h2 class="section__title" data-i18n="contact.title">Contacto</h2>
+        <p class="section__subtitle" data-i18n="contact.subtitle">¿Tenés una oportunidad o querés hablar sobre IT? Escribime.</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__link-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="contact__link-label mono">Email</span>
+              <a href="mailto:juarezvalentin627@gmail.com">juarezvalentin627@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact__link-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <span class="contact__link-label mono" data-i18n="contact.phone">Teléfono | WhatsApp</span>
+              <a href="tel:+5493518611229">(+54) 351 861-1229</a>
+              <a href="https://wa.me/543518611229">WhatsApp ↗</a>
+              <a href="tel:+5493518629870">(+54) 351 862-9870</a>
+              <a href="https://wa.me/543518629870">WhatsApp ↗</a>
+            </div>
+          </div>
+          <div class="contact__link-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <div>
+              <span class="contact__link-label mono">LinkedIn</span>
+              <a href="https://linkedin.com/in/valentin-juarez-/" target="_blank" rel="noopener">linkedin.com/in/valentin-juarez-/</a>
+            </div>
+          </div>
+          <div class="contact__link-item">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="contact__link-label mono">GitHub</span>
+              <a href="https://github.com/ValentinJz" target="_blank" rel="noopener">github.com/ValentinJz</a>
+            </div>
+          </div>
+          <div class="contact__link-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span class="contact__link-label mono" data-i18n="contact.location.label">Ubicación</span>
+              <span data-i18n="contact.location.value">Córdoba, Argentina</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label mono" data-i18n="form.name">nombre</label>
+            <input type="text" id="name" name="name" class="form-input" data-i18n-placeholder="form.name.ph" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label mono">email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label mono" data-i18n="form.subject">asunto</label>
+            <input type="text" id="subject" name="subject" class="form-input" data-i18n-placeholder="form.subject.ph" placeholder="¿De qué se trata?" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label mono" data-i18n="form.message">mensaje</label>
+            <textarea id="message" name="message" class="form-input form-textarea" rows="5" data-i18n-placeholder="form.message.ph" placeholder="Tu mensaje..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fa-solid fa-paper-plane"></i> <span data-i18n="form.send">Enviar mensaje</span>
+          </button>
+          <p class="form-note mono" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <span class="footer__copy">© 2026 Valentín Juarez · Córdoba, Argentina</span>
+          <a href="https://whatido.tech/p/valentin-juarez" target="_blank" rel="noopener" style="display:block; margin-top:6px;">
+            <img src="https://whatido.tech/badge/valentin-juarez" alt="whatIDO" style="width:300px; height:auto; opacity:0.8;" />
+          </a>
+        </div>
+        <div class="footer__social">
+          <a href="https://github.com/ValentinJz" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/valentin-juarez-/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:juarezvalentin627@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
