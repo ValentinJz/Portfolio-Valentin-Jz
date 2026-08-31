@@ -86,6 +86,8 @@ const translations = {
 
     'proj.title':        'Proyectos',
     'proj.subtitle':     'Cosas que hice o en las que participé, aplicando lo aprendido.',
+    'proj.p0.title':     'Zertal Desk',
+    'proj.p0.desc':      'Helpdesk de IT potenciado con IA que clasifica, diagnostica y escala incidentes automáticamente. Incluye login por roles, escalado N1/N2/N3, gestión de tickets y panel de administración. Desarrollado para la competencia CoderCup de Coderhouse.', 
     'proj.p1.title':     'Scripts PowerShell',
     'proj.p1.desc':      'Scripts desarrollados durante mi experiencia en Ankaloo para automatizar tareas: Optimizadores, limpiadores residuales, creación de usuarios, reportes de equipos y gestión de servicios. Aplicación real en producción.',
     'proj.p2.title':     'Documentación Técnica Interna',
@@ -201,6 +203,8 @@ const translations = {
 
     'proj.title':        'Projects',
     'proj.subtitle':     'Things I built or participated in, applying what I\'ve learned.',
+    'proj.p0.title':     'Zertal Desk',
+    'proj.p0.desc':      'AI-powered IT helpdesk that classifies, diagnoses and escalates incidents automatically. Includes role-based login, N1/N2/N3 escalation, ticket management and an admin panel. Built for Coderhouse\'s CoderCup competition.',
     'proj.p1.title':     'PowerShell Scripts',
     'proj.p1.desc':      'Scripts developed during my internship at Ankaloo to automate tasks: optimizers, residual cleaners, user creation, equipment reports and service management. Real production use.',
     'proj.p2.title':     'Internal Technical Documentation',
