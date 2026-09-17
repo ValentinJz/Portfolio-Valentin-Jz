@@ -1214,3 +1214,20 @@ img { max-width: 100%; display: block; }
   .nav__burger { display: flex; }
   .nav__mobile.open { display: flex; }
 }
+.cert-card--link {
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color .2s, transform .2s;
+}
+.cert-card--link:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.cert-card--link .cert-card__name {
+  color: var(--text);
+}
+.cert-card__status--link {
+  background: rgba(59,130,246,.1);
+  color: var(--accent);
+  border: 1px solid rgba(59,130,246,.2);
+}
