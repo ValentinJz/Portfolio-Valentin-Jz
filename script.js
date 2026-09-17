@@ -14,8 +14,8 @@ const translations = {
 
     'hero.badge':   'Disponible para oportunidades',
     'hero.eyebrow': 'Hola, soy',
-    'hero.title':   'Soporte IT Junior · Córdoba, Argentina',
-    'hero.desc':    'Analista de Soporte IT Junior N1-N2 con experiencia real en gestión de incidencias, monitoreo de infraestructura y administración de entornos corporativos. Orientado al aprendizaje continuo y al crecimiento dentro del área IT.',
+    'hero.title':   'Soporte IT · Córdoba, Argentina',
+    'hero.desc':    'Analista de Soporte IT N1-N2 con experiencia real en gestión de incidencias, monitoreo de infraestructura y administración de entornos corporativos. Orientado al aprendizaje continuo y al crecimiento dentro del área IT.',
     'hero.cv':      'Descargar CV',
     'hero.contact': 'Contacto',
 
@@ -102,6 +102,8 @@ const translations = {
     'certs.c1':    'Introducción a la Programación, Domótica y Robótica',
     'certs.c2':    'Reparación y ensamblado de equipos informáticos',
     'certs.done':  'Completado',
+    'certs.more':  'Ver todas mis certificaciones',
+    'certs.more.sub': 'Carpeta completa en Google Drive ↗',
 
     'contact.title':          'Contacto',
     'contact.subtitle':       '¿Tenés una oportunidad o querés hablar sobre IT? Escribime.',
@@ -133,8 +135,8 @@ const translations = {
 
     'hero.badge':   'Open to opportunities',
     'hero.eyebrow': 'Hi, I\'m',
-    'hero.title':   'Junior IT Support · Córdoba, Argentina',
-    'hero.desc':    'Junior IT Support Analyst N1-N2 with real-world experience in incident management, infrastructure monitoring and corporate environment administration. Focused on continuous learning and growth within the IT field.',
+    'hero.title':   'IT Support · Córdoba, Argentina',
+    'hero.desc':    'IT Support Analyst N1-N2 with real-world experience in incident management, infrastructure monitoring and corporate environment administration. Focused on continuous learning and growth within the IT field.',
     'hero.cv':      'Download CV',
     'hero.contact': 'Contact',
 
@@ -221,6 +223,8 @@ const translations = {
     'certs.c1':    'Introduction to Programming, Home Automation & Robotics',
     'certs.c2':    'Computer Equipment Repair & Assembly',
     'certs.done':  'Completed',
+    'certs.more':     'View all my certifications',
+    'certs.more.sub': 'Full folder on Google Drive ↗',
 
     'contact.title':          'Contact',
     'contact.subtitle':       'Have an opportunity or want to talk about IT? Reach out.',
