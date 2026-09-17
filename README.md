@@ -2,9 +2,9 @@
 
 # Portfolio · Valentín Juarez
 
-**Analista de Soporte IT Junior · Infraestructura · Help Desk**
+**Analista de Soporte IT · Infraestructura (NOC) · Help Desk**
 
-Mi sitio personal para postulaciones en Soporte IT, Help Desk y roles junior de infraestructura.
+Mi sitio personal para postulaciones en Soporte IT, Help Desk e Infraestructura / NOC.
 
 🔗 **[valentinjz.vercel.app](https://valentinjz.vercel.app)**
 
