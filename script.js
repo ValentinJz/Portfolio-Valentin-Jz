@@ -103,7 +103,7 @@ const translations = {
     'certs.c2':    'Reparación y ensamblado de equipos informáticos',
     'certs.done':  'Completado',
     'certs.more':  'Ver todas mis certificaciones',
-    'certs.more.sub': 'Carpeta completa en Google Drive ↗',
+    'certs.more.sub': 'Google Drive ↗',
 
     'contact.title':          'Contacto',
     'contact.subtitle':       '¿Tenés una oportunidad o querés hablar sobre IT? Escribime.',
@@ -223,8 +223,8 @@ const translations = {
     'certs.c1':    'Introduction to Programming, Home Automation & Robotics',
     'certs.c2':    'Computer Equipment Repair & Assembly',
     'certs.done':  'Completed',
-    'certs.more':     'View all my certifications',
-    'certs.more.sub': 'Full folder on Google Drive ↗',
+    'certs.more':  'View all my certifications',
+    'certs.more.sub': 'Google Drive ↗',
 
     'contact.title':          'Contact',
     'contact.subtitle':       'Have an opportunity or want to talk about IT? Reach out.',
