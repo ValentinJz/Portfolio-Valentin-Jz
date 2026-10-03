@@ -57,5 +57,5 @@ Construido a mano, sin frameworks — HTML semántico, CSS con custom properties
 
 ¿Tenés una oportunidad o querés charlar sobre IT?
 
-[![Email](https://img.shields.io/badge/Email-juarezvalentin627%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:juarezvalentin627@gmail.com)
+[![Email](https://img.shields.io/badge/Email-valentinjuarezit%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:valentinjuarezit@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Valent%C3%ADn%20Juarez-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/valentin-juarez-/)
