@@ -387,7 +387,10 @@ const sectionObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.35 }
+  // Franja fina en el centro de la pantalla: una seccion queda activa
+  // mientras la cruza, sin importar su altura (con threshold 0.35 las
+  // secciones altas, como Experiencia, nunca llegaban a activarse).
+  { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
 );
 
 sections.forEach(s => sectionObserver.observe(s));
