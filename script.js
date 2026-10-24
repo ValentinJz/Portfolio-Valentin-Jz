@@ -124,7 +124,7 @@ const translations = {
 
     'form.err.required': 'Por favor completá nombre, email y mensaje.',
     'form.err.email':    'El email no parece válido.',
-    'form.err.conn':     'Error de conexión. Escribime directo a juarezvalentin627@gmail.com',
+    'form.err.conn':     'Error de conexión. Escribime directo a valentinjuarezit@gmail.com',
     'form.sending':      'Enviando...',
     'form.success':      '¡Mensaje enviado! Te respondo a la brevedad.',
   },
@@ -248,7 +248,7 @@ const translations = {
 
     'form.err.required': 'Please fill in name, email and message.',
     'form.err.email':    'That email doesn\'t look valid.',
-    'form.err.conn':     'Connection error. Email me directly at juarezvalentin627@gmail.com',
+    'form.err.conn':     'Connection error. Email me directly at valentinjuarezit@gmail.com',
     'form.sending':      'Sending...',
     'form.success':      'Message sent! I\'ll get back to you soon.',
   }
