@@ -10,6 +10,7 @@ const translations = {
     'nav.skills':     'Habilidades',
     'nav.experience': 'Experiencia',
     'nav.projects':   'Proyectos',
+    'nav.certs':      'Certificaciones',
     'nav.contact':    'Contacto',
 
     'hero.badge':   'Disponible para oportunidades',
@@ -134,6 +135,7 @@ const translations = {
     'nav.skills':     'Skills',
     'nav.experience': 'Experience',
     'nav.projects':   'Projects',
+    'nav.certs':      'Certifications', 
     'nav.contact':    'Contact',
 
     'hero.badge':   'Open to opportunities',
