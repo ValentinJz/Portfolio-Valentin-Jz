@@ -18,93 +18,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/404.css" />
 
-  <!-- Aplica el tema antes de pintar para evitar parpadeo -->
-  <script>
-    (function () {
-      var theme;
-      try {
-        theme = localStorage.getItem('theme');
-        if (!theme) theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      } catch (e) { theme = 'dark'; }
-      document.documentElement.setAttribute('data-theme', theme);
-    })();
-  </script>
-
-  <style>
-    .nf {
-      position: relative;
-      min-height: 100svh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .nf__inner {
-      position: relative;
-      padding: 6rem 1.5rem 4rem;
-    }
-
-    .nf__code {
-      font-family: var(--font-mono);
-      font-size: clamp(5rem, 22vw, 11rem);
-      font-weight: 700;
-      line-height: 1;
-      letter-spacing: -.04em;
-      color: var(--accent);
-      text-shadow: 0 0 60px var(--accent-glow);
-      animation: fadeDown .6s ease both;
-    }
-
-    .nf__title {
-      font-size: clamp(1.5rem, 4vw, 2.25rem);
-      font-weight: 700;
-      letter-spacing: -.02em;
-      margin: .5rem 0 .75rem;
-      animation: fadeDown .6s .05s ease both;
-    }
-
-    .nf__desc {
-      max-width: 480px;
-      margin: 0 auto 1.75rem;
-      color: var(--text-2);
-      animation: fadeDown .6s .1s ease both;
-    }
-
-    .nf__term {
-      display: block;
-      width: fit-content;
-      max-width: 100%;
-      margin: 0 auto 2rem;
-      padding: 1rem 1.25rem;
-      text-align: left;
-      font-family: var(--font-mono);
-      font-size: .8rem;
-      line-height: 1.7;
-      color: var(--text-2);
-      background: var(--bg-2);
-      border: 1px solid var(--border);
-      border-radius: var(--r);
-      overflow-wrap: anywhere;
-      animation: fadeDown .6s .15s ease both;
-    }
-    .nf__prompt { color: var(--accent); }
-    .nf__err    { color: #ef4444; }
-
-    .nf__cta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .75rem;
-      justify-content: center;
-      animation: fadeDown .6s .2s ease both;
-    }
-
-    @media (max-width: 480px) {
-      .nf__cta .btn { width: 100%; justify-content: center; }
-    }
-  </style>
+  <!-- Aplica el tema antes de pintar (evita parpadeo) y maneja idioma/tema.
+       Es un archivo externo porque la política de seguridad (CSP) bloquea scripts dentro del HTML. -->
+  <script src="/404.js"></script>
 </head>
 <body>
 
@@ -143,74 +61,5 @@
     </div>
   </main>
 
-  <script>
-    // ── Traducciones ──────────────────────────────────────────────
-    var translations = {
-      es: {
-        page:    '404 · Página no encontrada',
-        title:   'Página no encontrada',
-        desc:    'La página que buscás no existe o fue movida. Puede que el enlace esté mal escrito.',
-        term:    'Error: destino inaccesible (404).',
-        home:    'Volver al inicio',
-        contact: 'Contacto'
-      },
-      en: {
-        page:    '404 · Page not found',
-        title:   'Page not found',
-        desc:    "The page you're looking for doesn't exist or was moved. The link may be mistyped.",
-        term:    'Error: destination unreachable (404).',
-        home:    'Back to home',
-        contact: 'Contact'
-      }
-    };
-
-    // Mismas claves de localStorage que el portfolio: 'lang' y 'theme'
-    var langToggle = document.getElementById('langToggle');
-    var themeToggle = document.getElementById('themeToggle');
-    var themeIcon = document.getElementById('themeIcon');
-    var root = document.documentElement;
-
-    function store(key, value) {
-      try { localStorage.setItem(key, value); } catch (e) {}
-    }
-
-    function applyLang(lang) {
-      store('lang', lang);
-      root.lang = lang;
-      langToggle.textContent = lang === 'es' ? 'EN' : 'ES';
-      document.title = translations[lang].page;
-      document.querySelectorAll('[data-i18n]').forEach(function (el) {
-        var val = translations[lang][el.getAttribute('data-i18n')];
-        if (val !== undefined) el.textContent = val;
-      });
-    }
-
-    function applyTheme(theme) {
-      root.setAttribute('data-theme', theme);
-      store('theme', theme);
-      themeIcon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-    }
-
-    var currentLang = 'es';
-    try { currentLang = localStorage.getItem('lang') || 'es'; } catch (e) {}
-    if (!translations[currentLang]) currentLang = 'es';
-
-    langToggle.addEventListener('click', function () {
-      currentLang = currentLang === 'es' ? 'en' : 'es';
-      applyLang(currentLang);
-    });
-
-    themeToggle.addEventListener('click', function () {
-      applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-    });
-
-    // Ruta pedida en la "terminal" (textContent: no interpreta HTML)
-    var path = location.pathname;
-    if (path.length > 60) path = path.slice(0, 57) + '...';
-    document.getElementById('nfPath').textContent = path;
-
-    applyLang(currentLang);
-    applyTheme(root.getAttribute('data-theme') || 'dark');
-  </script>
 </body>
 </html>
