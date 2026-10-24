@@ -1,0 +1,72 @@
+.nf {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.nf__inner {
+  position: relative;
+  padding: 6rem 1.5rem 4rem;
+}
+
+.nf__code {
+  font-family: var(--font-mono);
+  font-size: clamp(5rem, 22vw, 11rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: var(--accent);
+  text-shadow: 0 0 60px var(--accent-glow);
+  animation: fadeDown .6s ease both;
+}
+
+.nf__title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  margin: .5rem 0 .75rem;
+  animation: fadeDown .6s .05s ease both;
+}
+
+.nf__desc {
+  max-width: 480px;
+  margin: 0 auto 1.75rem;
+  color: var(--text-2);
+  animation: fadeDown .6s .1s ease both;
+}
+
+.nf__term {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 2rem;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  line-height: 1.7;
+  color: var(--text-2);
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow-wrap: anywhere;
+  animation: fadeDown .6s .15s ease both;
+}
+.nf__prompt { color: var(--accent); }
+.nf__err    { color: #ef4444; }
+
+.nf__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  justify-content: center;
+  animation: fadeDown .6s .2s ease both;
+}
+
+@media (max-width: 480px) {
+  .nf__cta .btn { width: 100%; justify-content: center; }
+}
