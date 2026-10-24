@@ -50,8 +50,6 @@ Construido a mano, sin frameworks — HTML semántico, CSS con custom properties
 ### 🗺️ Roadmap
 - **Agregar sección de Servicios**
 - **Automatización de cambios en:** Sobre mí · Experiencia · Proyectos · Certificaciones, etc.
-- **Agregar mas features:** (`/es`, `/en`) dedicado, 404 personalizado, seguridad, etc.
-- **Seguir puliendo la interfaz** 
 
 ### 📬 Contacto
 
