@@ -1296,13 +1296,6 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: .6rem;
 }
-.cert-group__count {
-  padding: .1rem .6rem;
-  border: 1px solid var(--border-2);
-  border-radius: 100px;
-  font-size: .75rem;
-  color: var(--text-3);
-}
 .cert-group__chevron {
   font-size: .8rem;
   color: var(--text-3);
