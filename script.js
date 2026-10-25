@@ -406,13 +406,6 @@ const sectionObserver = new IntersectionObserver(
 sections.forEach(s => sectionObserver.observe(s));
 
 
-// ── Certificaciones: contador de cada desplegable ──────────────────────────────
-document.querySelectorAll('.cert-group').forEach(group => {
-  const badge = group.querySelector('.cert-group__count');
-  if (badge) badge.textContent = group.querySelectorAll('.cert-list__item').length;
-});
-
-
 // ── Contact form via Formspree ─────────────────────────────────────────────────
 const FORMSPREE_ID = 'mgojwdln';
 
