@@ -1241,3 +1241,105 @@ img { max-width: 100%; display: block; }
   color: var(--accent);
   border: 1px solid rgba(59,130,246,.2);
 }
+
+/* ══════════════════════════════════════
+   CERTIFICATIONS — tarjetas desplegables por emisor
+══════════════════════════════════════ */
+.certs__groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.cert-group {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  transition: border-color .2s;
+}
+.cert-group:hover { border-color: var(--border-2); }
+.cert-group[open] { border-color: var(--accent); }
+
+.cert-group__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1.25rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.cert-group__summary::-webkit-details-marker { display: none; }
+.cert-group__summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--r);
+}
+
+.cert-group__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  height: 44px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.cert-group__brand i { color: var(--accent); font-size: 1.6rem; }
+.cert-group__logo { height: 38px; width: auto; display: block; }
+
+.cert-group__meta {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.cert-group__chevron {
+  font-size: .8rem;
+  color: var(--text-3);
+  transition: transform .25s, color .2s;
+}
+.cert-group[open] .cert-group__chevron { transform: rotate(180deg); }
+.cert-group__summary:hover .cert-group__chevron { color: var(--accent); }
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.25rem .5rem;
+  border-top: 1px solid var(--border);
+}
+.cert-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  padding: .8rem 0;
+  font-size: .85rem;
+  line-height: 1.45;
+  color: var(--text-2);
+}
+.cert-list__item + .cert-list__item { border-top: 1px solid var(--border); }
+.cert-list__item i {
+  width: 16px;
+  flex-shrink: 0;
+  margin-top: .15rem;
+  font-size: .9rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+.certs__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 760px) {
+  .certs__groups { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .certs__links .btn { width: 100%; justify-content: center; }
+}
