@@ -484,15 +484,17 @@
         <h2 class="section__title" data-i18n="certs.title">Certificaciones</h2>
       </div>
 
-      <!-- Un desplegable por emisor. Para sumar una certificación: agregá un <li> dentro del grupo
+      <!-- Una tarjeta desplegable por emisor. Para sumar una certificación: agregá un <li> dentro del grupo
            que corresponda (el contador se actualiza solo). Para abrir un grupo por defecto: <details ... open>. -->
       <div class="certs__groups">
 
         <details class="cert-group reveal">
           <summary class="cert-group__summary">
             <span class="cert-group__brand"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
-            <span class="cert-group__count mono">2</span>
-            <i class="fa-solid fa-chevron-down cert-group__chevron" aria-hidden="true"></i>
+            <span class="cert-group__meta">
+              <span class="cert-group__count mono">2</span>
+              <i class="fa-solid fa-chevron-down cert-group__chevron" aria-hidden="true"></i>
+            </span>
           </summary>
           <ul class="cert-list">
             <li class="cert-list__item"><i class="fa-solid fa-certificate"></i><span data-i18n="certs.c3">SC-100T00-A: Microsoft Cybersecurity Architect</span></li>
@@ -502,9 +504,11 @@
 
         <details class="cert-group reveal">
           <summary class="cert-group__summary">
-            <span class="cert-group__brand"><img src="Cisco.svg" alt="Cisco" class="cert-group__logo" width="49" height="26" /></span>
-            <span class="cert-group__count mono">2</span>
-            <i class="fa-solid fa-chevron-down cert-group__chevron" aria-hidden="true"></i>
+            <span class="cert-group__brand"><img src="Cisco.svg" alt="Cisco" class="cert-group__logo" width="72" height="38" /></span>
+            <span class="cert-group__meta">
+              <span class="cert-group__count mono">2</span>
+              <i class="fa-solid fa-chevron-down cert-group__chevron" aria-hidden="true"></i>
+            </span>
           </summary>
           <ul class="cert-list">
             <li class="cert-list__item"><i class="fa-solid fa-certificate"></i><span data-i18n="certs.c4">Operating Systems Basics</span></li>
@@ -515,8 +519,10 @@
         <details class="cert-group reveal">
           <summary class="cert-group__summary">
             <span class="cert-group__brand"><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="certs.g3">Cursos</span></span>
-            <span class="cert-group__count mono">2</span>
-            <i class="fa-solid fa-chevron-down cert-group__chevron" aria-hidden="true"></i>
+            <span class="cert-group__meta">
+              <span class="cert-group__count mono">2</span>
+              <i class="fa-solid fa-chevron-down cert-group__chevron" aria-hidden="true"></i>
+            </span>
           </summary>
           <ul class="cert-list">
             <li class="cert-list__item"><i class="fa-solid fa-certificate"></i><span data-i18n="certs.c1">Introducción a la Programación, Domótica y Robótica</span></li>
@@ -526,21 +532,12 @@
 
       </div>
 
-      <div class="certs__links">
-        <a href="https://drive.google.com/drive/u/0/folders/1TiPP4GgTCrBYlcQF2Djn0h2AoJgAecR2" target="_blank" rel="noopener" class="cert-card cert-card--link reveal">
-          <div class="cert-card__icon"><i class="fa-solid fa-folder-open"></i></div>
-          <div class="cert-card__info">
-            <h3 class="cert-card__name" data-i18n="certs.more">Ver todas mis certificaciones</h3>
-            <span class="cert-card__status cert-card__status--link" data-i18n="certs.more.sub">Carpeta completa en Google Drive ↗</span>
-          </div>
+      <div class="certs__links reveal">
+        <a href="https://drive.google.com/drive/u/0/folders/1TiPP4GgTCrBYlcQF2Djn0h2AoJgAecR2" target="_blank" rel="noopener" class="btn btn--ghost">
+          <i class="fa-solid fa-folder-open"></i> <span data-i18n="certs.more">Ver todas mis certificaciones</span>
         </a>
-
-        <a href="https://www.credly.com/users/valentin-juarez-/" target="_blank" rel="noopener" class="cert-card cert-card--link reveal">
-          <div class="cert-card__icon"><i class="fa-solid fa-award"></i></div>
-          <div class="cert-card__info">
-            <h3 class="cert-card__name" data-i18n="certs.credly">Ver mis insignias</h3>
-            <span class="cert-card__status cert-card__status--link" data-i18n="certs.credly.sub">Perfil en Credly ↗</span>
-          </div>
+        <a href="https://www.credly.com/users/valentin-juarez-/" target="_blank" rel="noopener" class="btn btn--ghost">
+          <i class="fa-solid fa-award"></i> <span data-i18n="certs.credly">Ver mis insignias</span>
         </a>
       </div>
 
